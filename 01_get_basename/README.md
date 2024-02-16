@@ -118,7 +118,7 @@ Directory structure after the successful completion of the pipeline as follows, 
 └── workflow.nf
 ```
 
-And here is a quick look at out output files in results directory
+And here is a quick look at output files in results directory
 ```
 $ cat results/*txt
 #JUST SOME RANDOM TEXT
