@@ -15,6 +15,6 @@ process TOUCH {
 
   script:
   """
-  touch "${some_file.baseName}.txt"
+  cat $some_file | tr 'a-z' 'A-Z' > "${some_file.baseName}.txt"
   """
 }
