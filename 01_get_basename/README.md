@@ -5,6 +5,7 @@ Main idea is to extract the basename from .log files and use the `basename` when
 ### Prepare files
 - Clone the contents of this directory (modules, workflow.nf, nextflow executable)
 - Make `nextflow` executable by running the code below
+  
   ```
   chmod 777 ./nextflow
   ```
