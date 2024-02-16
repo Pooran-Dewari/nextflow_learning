@@ -1,3 +1,7 @@
+### What does this pipeline do?
+This pipeline takes .log files as input, reads the contents, converts text into upper case, and writes them into .text files in `results` directory.
+Main idea is to extract the basename from .log files and use the `basename` when outputting .txt files.
+
 ### Prepare files
 - Clone the contents of this directory (modules, workflow.nf, nextflow executable)
 - Create `input` directory & then write some silly text into ten log files, we will use these log files as input for our pipeline
@@ -40,8 +44,7 @@ $ cat input/*log
 #just some random text
 ```
 ### Run nextflow pipeline
-This pipeline takes .log files as input, reads the contents, converts text into upper case, and writes them into .text files in `results` directory.
-Main idea is to extract the basename from .log files and use the `basename` when outputting .txt files.
+
 ```
 ./nextflow run workflow.nf
 ```
